@@ -13,6 +13,7 @@ while n>=0:
     result += 1 #차감 후 result에 +1 , 이 과정을 5의 배수가 될 때 까지 반복
 else: #while문이 거짓일 경우
     print(-1) """
+import heapq
 
 """ #ATM
 #주어진 숫자의 누적 합을 구하는 문제
@@ -485,6 +486,7 @@ else: print(c)
 
 #저울
 #가능한 합의 결과들을 나열하고 최대값 +1
+"""
 n = int(input())
 nli=list(map(int,input().split()))
 nli.sort()
@@ -495,4 +497,91 @@ for i in nli:
     c+=i #c가 i보다 크다면 계속 더하기
 
 print(c)
+"""
+
+#강의실 배정
+#우선순위 큐
+"""
+import sys
+import heapq
+q=[] #큐 생성
+n = int(sys.stdin.readline())
+for i in range(n):
+    s, t = map(int,sys.stdin.readline().split())
+    q.append([s,t]) #q에 입력받은 s,t 넣음
+q.sort() #시작시간 기준 정렬
+nli=[] #새로운 큐 생성
+heapq.heappush(nli,q[0][1])
+#첫번째 회의 끝나는 시간을 nli에 넣어줌
+
+for i in range(1,n):
+    if q[i][0] < nli[0]: #nli[0]=q[0][1]
+    #현재 회의 끝나는 시간보다 다음 회의 시작시간이 더 빠르면
+        heapq.heappush(nli,q[i][1])
+        #nli에 다음 회의 시작시간 넣어줌
+    else: #현재 회의실 그대로 진행 가능하면
+        heapq.heappop(nli)
+        #그 다음 회의 시간 변경위해 pop
+        heapq.heappush(nli,q[i][1])
+        #그 다음 회의 끝나는 시간 넣어줌
+print(len(nli))
+"""
+
+#세탁소 사장 동혁 / 거스름돈 문제
+#q=0.25 d=0.10 n=0.05 p=0.01
+"""
+t = int(input())
+tli=list()
+
+for i in range(t):
+    tli.append(int(input()))
+
+for i in range(t):
+    if tli[i] % 25 == 0:
+        q= tli[i] // 25
+        d=0
+        n=0
+        p=0
+    else:
+        q= tli[i] // 25
+        r = tli[i] % 25
+        if r % 10 == 0:
+            d= r // 10
+            n=0
+            p=0
+        else:
+            d= r // 10
+            r = r % 10
+            if r % 5 == 0:
+                n=r // 5
+                p=0
+            else:
+                n = r //5
+                r = r % 5
+                p = r
+    print(q,d,n,p)
+"""
+
+#병든 나이트
+#f=(2,1) s=(1,2) t=(-1,2) fo=(-2,1)
+#바둑판
+"""
+n,m = map(int,input().split())
+if n==1:
+    print(1)
+elif n==2:
+    #n==2이면 s,t만 사용가능하고 최대 4번까지, 4번보다 작다면 (m+1)//2
+    print(min(4,(m+1)//2))
+elif n > 2 and m < 7:
+    #이동 횟수가 4번 이하
+    print(min(4,m))
+else: #이동 횟수 4번 이상
+    print(m-2)
+"""
+
+#멀티탭 스케줄링
+
+
+
+
 
