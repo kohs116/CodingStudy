@@ -85,7 +85,7 @@ for i in range(n):
     result += (a[i]*b[i])
 
 print(result) 
-#처음으로 구글링 안하고 맞춘문제임!!ㅁㅊ
+
 """
 
 """ #잃어버린 괄호
@@ -190,8 +190,8 @@ for i in range(t):
     print(count)
     """
 
-#카드 정렬하기
-#누적 합
+# 카드 정렬하기
+# 누적 합
 """ n = int(input())
 card = []
 for i in range(n):
@@ -226,8 +226,8 @@ print(result)
 #30+40 + 30+40+50 + 30+40+50+100 = 70+120+220= 410
 """
 
-#단어 수학
-#자릿수대로 가장 큰 숫자 대입
+# 단어 수학
+# 자릿수대로 가장 큰 숫자 대입
 """
 import sys
 n=int(sys.stdin.readline())
@@ -256,8 +256,8 @@ for i in num:
 print(sum)
 """
 
-#뒤집기
-#문자열에서 저장되어있는 문자와 다른 문자가 나오면 count+1
+# 뒤집기
+# 문자열에서 저장되어있는 문자와 다른 문자가 나오면 count+1
 """ s=input()
 count=0
 prev='?' # 0/1 뭐로 시작하든 상관없음
@@ -289,14 +289,14 @@ while True:
 print(count)
 """
 
-#캠핑
-#l=5 p=8 v=20
-#연속하는 8일 중 5일동안만 사용 가능, 이제 막 20일짜리 휴가 시작
-#처음 5일 쓰고 3일 못하고 또 5일 쓰고 ... 반복
-#1~5 사용 6~8 쉬고 9~13 사용 14~16 쉬고 17~20 쓰고
-#총 14일 사용 가능
-#v%p가 l보다 크다면? l을 더해주어아 함
-#v//p = 2. 2 * l = 10. 10+v%p(=4) = 14
+# 캠핑
+# l=5 p=8 v=20
+# 연속하는 8일 중 5일동안만 사용 가능, 이제 막 20일짜리 휴가 시작
+# 처음 5일 쓰고 3일 못하고 또 5일 쓰고 ... 반복
+# 1~5 사용 6~8 쉬고 9~13 사용 14~16 쉬고 17~20 쓰고
+# 총 14일 사용 가능
+# v%p가 l보다 크다면? l을 더해주어아 함
+# v//p = 2. 2 * l = 10. 10+v%p(=4) = 14
 """ i=1 #첫번째 줄은 case1
 while True:
     l, p, v = map(int, input().split())
@@ -312,16 +312,16 @@ while True:
         i+=1 #다음 케이스 출력위해 +1
 """
 
-#보석 도둑
-#보석 총 n개 각 보석은 무게 m 가격 v 가지고있음.
-#가방 k개 가지고 있고 최대 c무게 까지 담을 수 있음. 가방엔 한개 보석만 넣을 수 있음.
-#훔칠 수 있는 보석의 최대 가격은?
+# 보석 도둑
+# 보석 총 n개 각 보석은 무게 m 가격 v 가지고있음.
+# 가방 k개 가지고 있고 최대 c무게 까지 담을 수 있음. 가방엔 한개 보석만 넣을 수 있음.
+# 훔칠 수 있는 보석의 최대 가격은?
 
-#보석 3개, 가방 2개
-#m=1,5,2 v=65,23,99
-#가방엔 각각 10,2 까지 담을 수 있음
+# 보석 3개, 가방 2개
+# m=1,5,2 v=65,23,99
+# 가방엔 각각 10,2 까지 담을 수 있음
 # 99+65 = 164
-#우선순위 큐
+# 우선순위 큐
 """
 import heapq
 import sys
@@ -344,9 +344,9 @@ for i in c_li: #가방이 담을 수 있는 무게 i
 print(result)
 """
 
-#기타줄
-#끊어진 기타줄 n개, 기타줄 브랜드 m개
-#각 브랜드의 패키지 , 낱개 가격이 공백으로 구분
+# 기타줄
+# 끊어진 기타줄 n개, 기타줄 브랜드 m개
+# 각 브랜드의 패키지 , 낱개 가격이 공백으로 구분
 """
 n,m = map(int,input().split())
 pack = list()
@@ -371,8 +371,8 @@ elif minp >= mini*6 : #패키지가격이 낱개*6 한 값보다 비싸다면
     print(n*mini) #낱개가격으로 계산
 """
 
-#수 묶기
-#음수, 양수, 1 일 경우의 케이스를 각각 나누어 계산
+# 수 묶기
+# 음수, 양수, 1 일 경우의 케이스를 각각 나누어 계산
 """
 n = int(input()) #수열의 크기 n
 minus_list=[] #음수 리스트
@@ -413,9 +413,9 @@ for j in range(len(one_list)):
 print(ans)
 """
 
-#5와 6의 차이
-#5일때 최소 6일때 최대
-#replace 함수 사용 : 어떤 값 찾아 바꿔줌
+# 5와 6의 차이
+# 5일때 최소 6일때 최대
+# replace 함수 사용 : 어떤 값 찾아 바꿔줌
 """
 a, b = map(str,input().split())
 min = int(a.replace('6','5')) + int(b.replace('6','5'))
@@ -425,8 +425,8 @@ max = int(a.replace('5','6')) + int(b.replace('5','6'))
 print(min,max)
 """
 
-#문서 검색
-#입력한 문자열에 특정 문자열이 몇번 포함되어 있는 지?
+# 문서 검색
+# 입력한 문자열에 특정 문자열이 몇번 포함되어 있는 지?
 """
 d=input() #문서
 f=input() #검색 단어
@@ -437,8 +437,8 @@ else:
     print("0")
 """
 
-#수리공 항승
-#반복 시작지점 start 중요
+# 수리공 항승
+# 반복 시작지점 start 중요
 """
 n, l = map(int,input().split())
 nli=list(map(int,input().split()))
@@ -456,9 +456,9 @@ for i in range(len(nli)):
 print(c)
 """
 
-#행렬
-#3X3 크기의 부분행렬 뒤집어 연산
-#1행-2행 1열-2열 이동하고 (1,1)이 동일하는 지 확인
+# 행렬
+# 3X3 크기의 부분행렬 뒤집어 연산
+# 1행-2행 1열-2열 이동하고 (1,1)이 동일하는 지 확인
 """
 n, m = map(int,input().split())
 a=[list(map(int,input().rstrip()))for i in range(n)]
@@ -484,8 +484,8 @@ if a!=b:
 else: print(c)
 """
 
-#저울
-#가능한 합의 결과들을 나열하고 최대값 +1
+# 저울
+# 가능한 합의 결과들을 나열하고 최대값 +1
 """
 n = int(input())
 nli=list(map(int,input().split()))
@@ -499,8 +499,8 @@ for i in nli:
 print(c)
 """
 
-#강의실 배정
-#우선순위 큐
+# 강의실 배정
+# 우선순위 큐
 """
 import sys
 import heapq
@@ -527,8 +527,8 @@ for i in range(1,n):
 print(len(nli))
 """
 
-#세탁소 사장 동혁 / 거스름돈 문제
-#q=0.25 d=0.10 n=0.05 p=0.01
+# 세탁소 사장 동혁 / 거스름돈 문제
+# q=0.25 d=0.10 n=0.05 p=0.01
 """
 t = int(input())
 tli=list()
@@ -562,9 +562,9 @@ for i in range(t):
     print(q,d,n,p)
 """
 
-#병든 나이트
-#f=(2,1) s=(1,2) t=(-1,2) fo=(-2,1)
-#바둑판
+# 병든 나이트
+# f=(2,1) s=(1,2) t=(-1,2) fo=(-2,1)
+# 바둑판
 """
 n,m = map(int,input().split())
 if n==1:
@@ -579,7 +579,335 @@ else: #이동 횟수 4번 이상
     print(m-2)
 """
 
-#멀티탭 스케줄링
+# 멀티탭 스케줄링
+"""
+n,k = map(int,input().split())
+kli=list(map(int,input().split()))
+c=0
+pli=list()
+for i in range(k):
+    if kli[i] in pli:
+        continue
+    #1.이미 꽂혀있을 때
+    if len(pli) != n:
+        pli.append(kli[i]) #빈공간에 현재 플러그 꽂아줌
+        continue
+    #2.멀티탭에 빈공간 있을 때
+    temp=0
+    far=0
+    for j in pli: #j=현재 꽂혀 있는 플러그
+        if j not in kli[i:]:
+        #3.이후 사용할 플러그 없을 때
+            temp=j #현재 플러그로 업데이트
+            break
+        elif kli[i:].index(j) > far:
+        #4. 이후 사용할 플러그 있을 때
+        #이후 사용될 플러그 중 가장 마지막에 있는 플러그 뽑아야함
+            far=kli[i:].index(j)
+            #마지막에 사용될 플러그로 업데이트
+            temp=j
+    pli[pli.index(temp)] = kli[i]
+    #temp 업데이트
+    c+=1
+
+print(c)
+"""
+
+# 게임을 만든 동준이
+"""
+n = int(input())
+nli=list()
+c=0
+for i in range(n):
+    nli.append(int(input()))
+
+for j in range(n-1,0,-1):
+#제일 뒤부터 맨 앞까지 거꾸로, 제일 앞 부터 하는 것보다 효율적
+    if nli[j] <= nli[j-1]:
+    #제일 뒤 값이 그 앞 값보다 작을 때
+        c+=(nli[j-1]-nli[j]+1)
+        #그 앞 값에서 뒤 값을 빼면 같아지고, 더 커야 하므로 +1
+        nli[j-1]=nli[j]-1
+        #제일 뒤 값보다 그 앞 값이 더 작아야 하므로 1만큼 빼주기
+print(c)
+"""
+
+# 팰린드롬 만들기 : 뒤집어도 똑같은 문자
+# Counter 함수 사용
+"""
+from collections import Counter
+name = list(input())
+name.sort()
+c = Counter(name)
+odd = 0
+center=''
+
+for i in c: #문자 개수 확인
+    if c[i] % 2 !=0: #문자 개수가 홀수이면
+        odd+=1 #홀수 +1
+        center+=i #홀수인 문자 가운데에
+        name.remove(i) #name에서 center에 넣은 문자 remove
+
+if odd>1:
+    print("I'm Sorry Hansoo")
+else:
+    side = ''
+    for j in range(0,len(name),2):
+        side+=name[j]
+    print(side+center+side[::-1])
+"""
+
+# 빵집
+# 1열~마지막열 까지  파이프라인 최대 개수 출력
+# 오른쪽, 오른쪽 위.아래 이동 가능
+"""
+def go(i,j):
+    if j == c-1:
+        return True # 마지막열
+    for d in dx:
+        if 0<=i+d < r and li[i+d][j+1] == '.' and not visit[i+d][j+1]:
+        # 시작행+(-1,0,1) < r 이고 [시작행+(-1,0,1)][1,2,3..] =='.' 이고 방문하지 않은 좌표라면
+            visit[i+d][j+1] = True #방문
+            if go(i+d,j+1):
+                return True
+    return False
+
+r,c = map(int,input().split())
+li = [list(input().rstrip())for _ in range(r)] #입력된 값 리스트
+visit = [[False]*c for _ in range(r)] #li * False
+dx = [-1,0,1] #방향
+ans=0
+for i in range(r):
+    if li[i][0] == '.':
+        if go(i,0):
+            ans+=1
+print(ans)
+"""
+
+# 통나무 건너뛰기
+"""
+t = int(input())
+#제일 큰 숫자를 가운데에 배치하고 그 다음 숫자들을 양쪽에 배치
+
+for _ in range(t):
+    n = int(input())
+    li=list(map(int,input().split()))
+    li.sort() #오름차순 정렬
+    c = 0
+    for j in range(2,n): #2~n-1
+        c=max(c,abs(li[j]-li[j-2])) #abs=절대값
+    print(c)
+"""
+
+# 크게 만들기
+# 문자열을 정수로 변환, k만큼 삭제 후 출력
+# stack / 스택 / LIFO
+"""
+n, k = map(int,input().split())
+s=list(input())
+stack=[]
+K=k
+for i in range(n):
+    while K>0 and stack: 
+        if stack[-1] < s[i]: 
+            stack.pop() 
+            K-=1 
+        else: break
+    stack.append(s[i])
+print("".join(stack[:n-k])) 
+
+* k와 K 구별
+// 여기까지 코드 밑에는 예시
+
+k=2, stack = 1
+
+k=2, stack[-1]=1 < s[1]=9
+stack.pop -> stack= 값x
+k=1
+stack = 9
+
+k=1, i=2, stack[-1] = 9 > s[2]=2
+
+break
+stack=9,2
+
+k=2, stack[-1]=2 < s[3]=4
+stack.pop -> stack=> 2제거
+
+따라서 stack에 남아있는 94 출력
+
+"""
+"""
+#컵홀더
+#*S*LL*LL*S*S*LL*
+
+n = int(input())
+seat = input()
+if "L" not in seat:
+    c = seat.count('S')
+    print(c)
+else:
+    cs = seat.count('S')
+    cl = seat.count('L')
+    cll = seat.count("LL")
+    if cl == 2:
+        print(cs+cl)
+    else:
+        print(cs+cll+1)
+
+"""
+
+# 거스름돈
+# -1 출력할 경우를 앞으로 빼야 시간 단축
+"""
+n = int(input())
+fc=0
+ft=0
+if n<2 or n==3:
+    print(-1)
+elif n%5 != 0:
+    if (n%5) % 2 != 0:
+        fc= n//5 -1
+        ft= (n-(5*fc))//2
+        print(fc+ft)
+    else:
+        fc= n//5
+        ft= (n%5)//2
+        print(fc+ft)
+elif n%5 == 0:
+    print(n//5)
+"""
+
+# 카드 합체 놀이
+# 3 2 6 (3+2)
+# 5 5 6
+# 4 2 3 1 > 1 2 3 4
+# 4 3 3 3 > 3 3 3 4
+# 4 6 6 3 > 6 6 3 4
+"""
+import sys
+n, m = map(int,sys.stdin.readline().split())
+nli = list(map(int,sys.stdin.readline().split()))
+
+for i in range(m):
+   nli.sort()  # 오름차순 정렬
+   c = nli[0]+nli[1]
+   nli[0] = c
+   nli[1] = c
+
+print(sum(nli))
+
+# 위 방법보다는 heap으로 구현했을 때 시간복잡도 Good
+
+import sys
+import heapq
+input = sys.stdin.readline
+
+n,m = map(int, input().split())
+
+card = list(map(int,input().split()))
+heapq.heapify(card)
+
+for i in range(m):
+    card1 = heapq.heappop(card)
+    card2 = heapq.heappop(card)
+
+    heapq.heappush(card, card1+card2)
+    heapq.heappush(card, card1 + card2)
+print(sum(card))
+"""
+
+# 센서
+"""
+n = int(input())
+k = int(input())
+nli = list(map(int,input().split()))
+nli.sort()
+arr=list()
+for i in range(n-1):
+    arr.append(nli[i+1]-nli[i])
+arr.sort()
+#print(nli) : 입력받은 배열 정렬
+#print(arr) : nli 각 요소의 차이값 정렬
+print(sum(arr[:n-k]))
+"""
+
+# 폴리오미노
+# replace 함수
+"""
+board = input()
+board = board.replace('XXXX','AAAA')
+board = board.replace('XX','BB')
+
+if 'X' in board: #치환했음에도 board에 X가 남아있다면
+    print(-1)
+else:
+    print(board)
+"""
+
+# A와B
+# 작은것에서 큰것으로 갈때는 역순 고려
+"""
+s = list(map(str,input()))
+t = list(map(str,input()))
+
+while len(s) != len(t):
+    if t[-1] == 'A':
+        t.pop()
+    elif t[-1] == 'B':
+        t.pop()
+        t=t[::-1]
+if s==t:
+    print(1)
+else:
+    print(0)
+"""
+
+# UCPC는 무엇의 약자일까?
+"""
+s = input()
+ucpc = ['U','C','P','C']
+length=0
+for u in ucpc:
+    if u in s: #U,C,P,C가 s에 포함된다면
+        length+=1
+        s=s[s.index(u)+1:] #포함된 인덱스+1부터 마지막인덱스까지로 설정, 다시 반복
+    else: #포함 되지 않는다면
+        print('I hate UCPC')
+        break
+if length==4:
+    print('I love UCPC')
+"""
+
+#주사위
+#2 / 1 2 3 4 5 6
+#-> 3면*4(24) + 2면*4(12) + 1면*0(0)= 36
+#3 / 1 2 3 4 5 6
+#-> 3면*4(24) + 2면*12(36) + 1면*9(9) = 69
+#4 / 1 2 3 4 5 6
+#-> 3면*4(24) + 2면*20(60) + 1면*28(28) = 112
+
+#3면은 24로 고정 , 2면은 24씩 증가
+"""
+n = int(input())
+diceli = list(map(int,input().split()))
+if n==1:
+    print(sum(diceli) - max(diceli))
+else:
+    sli=[min(diceli[0],diceli[5]), min(diceli[1],diceli[4]), min(diceli[2],diceli[3])] #인접한 두 면 중 더 작은 값
+    sli.sort() #오름차순 정렬
+    n1 = (n-2)*(n-2) + 4*(n-1)*(n-2)
+    n2 = (n-2)*4 + (n-1)*4
+    n3 = 4
+
+    ans = n1*sli[0] + n2*sum(sli[:2]) + n3*sum(sli)
+    print(ans)
+"""
+
+#배
+
+
+
 
 
 
