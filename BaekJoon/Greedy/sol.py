@@ -904,10 +904,39 @@ else:
     print(ans)
 """
 
-#배
+#이장님 초대
+"""
+n = int(input())
+nli=list(map(int,input().split()))
+nli.sort(reverse=True) #내림차순 정렬
 
+for i in range(len(nli)):
+    nli[i] = nli[i]+i+1 #자라는데 걸리는 시간 + i번째 + 1일
 
+print(max(nli)+1)
+"""
 
+#과제
+""""
+n = int(input())
+nli=list()
+c=[0 for _ in range(1000)]
+for _ in range(n):
+    nli.append(list(map(int,input().split())))
+
+nli.sort(key = lambda x :-x[1])
+#점수 내림차순
+for i in range(n):
+    for j in range(nli[i][0]-1,-1,-1):
+        if c[j] ==0 :
+            c[j] = nli[i][1]
+            break
+print(sum(c))
+"""
+
+s = input()
+ss = int(s[:6],2)
+print(ss)
 
 
 
