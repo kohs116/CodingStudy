@@ -6,7 +6,7 @@ def check(b):
         ch1 = [0] * 10  # 행 체크
         ch2 = [0] * 10  # 열 체크
         for j in range(9):
-            ch1[a[i][j]] = 1
+            ch1[a[i][j]] = 1 #누적합 X
             ch2[a[i][j]] = 1
         if sum(ch1) != 9 or sum(ch2) != 9:
             return False
