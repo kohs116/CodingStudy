@@ -5,8 +5,8 @@
 
 s = input()  # ((())(...
 stack = []
-cnt = 0  # 쇠막대기
-for i in range(len(s)):
+cnt = 0  # 쇠막대기의 총 개수
+for i in range(len(s)): # 괄호 입력된 개수
     if s[i] == '(':  # 여는괄호는 append
         stack.append(s[i])
     else:  # 닫는 괄호는 레이저 / 쇠막대기

@@ -1,4 +1,4 @@
-def reverse(x):
+def reverse(x): # 뒤집기 함수
     res = 0
     while x > 0 :
         t = x % 10
@@ -14,8 +14,8 @@ def isPrime(x):
         else:
             return True
 
-n = int(input())
-a = list(map(int,input().split()))
+n = int(input()) # n개의 자연수
+a = list(map(int,input().split())) # 자연수 리스트
 
 for x in a :
     tmp = reverse(x)

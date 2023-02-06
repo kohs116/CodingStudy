@@ -2,7 +2,7 @@
 
 n = int(input())
 a = [list(map(int, input().split())) for _ in range(n)]
-m = int(input())
+m = int(input()) # 회전 명령 개수
 for i in range(m):  # 회전 처리
     h, t, k = map(int, input().split())
     if t == 0:
@@ -11,7 +11,7 @@ for i in range(m):  # 회전 처리
     else:
         for _ in range(k):
             a[h - 1].insert(0, a[h - 1].pop())  # 제일 뒤 값을 꺼냄
-res = 0
+res = 0 # 감의 개수
 s = 0
 e = n - 1
 for i in range(n):

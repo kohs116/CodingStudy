@@ -12,8 +12,8 @@ for i in range(n):
             if x != dq.popleft():  # 제일 앞 과목과 일치하지 않는다면
                 print("#%d NO" % (i + 1))
                 break
-        else:  # 순서가 통과되었다면
-            if len(dq) == 0:  # dq가 비었다면 (필수과목이 모두 들어갔다면)
-                print("#%d YES" % (i + 1))
-            else:
-                print("%d NO" % (i + 1))
+    else:  # 순서가 통과되었다면
+        if len(dq) == 0:  # dq가 비었다면 (필수과목이 모두 들어갔다면)
+            print("#%d YES" % (i + 1))
+        else:
+            print("%d NO" % (i + 1))
