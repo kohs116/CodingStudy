@@ -23,8 +23,9 @@ res = 0
 while lt <= rt:
     mid = (lt + rt) // 2
     if mid>=maxx and Count(mid) <= m: #최소한 가장 큰 용량을 가지는 dvd 보다는 커야함
+    # 9개의 dvd에 9개의 노래를 넣으려면 maxx보다 mid가 크거나 같아야함
         res = mid
-        rt = mid - 1
+        rt = mid - 1 # 현재 mid보다 값이 더 큰 것들은 무조건 답이 되니까 rt로 최소값 찾기
     else:
         lt = mid + 1
 print(res)

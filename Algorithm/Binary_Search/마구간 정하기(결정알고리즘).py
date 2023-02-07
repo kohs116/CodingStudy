@@ -14,11 +14,11 @@ Line = []
 for _ in range(n):
     tmp = int(input())
     Line.append(tmp)
-Line.sort()
+Line.sort() # 1 2 4 8 9
 lt = 1
-rt = Line[n - 1]
+rt = Line[n - 1] # 9
 while lt <= rt:
-    mid = (lt + rt) // 2
+    mid = (lt + rt) // 2 # 5
     if Count(mid) <= c:
         res = mid
         lt = mid + 1
