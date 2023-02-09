@@ -1,7 +1,7 @@
 # 제일 가벼운사람과 제일 무거운사람을 짝지어 m보다 큰 지 작은 지 판별
 """
-n, limit = map(int, input().split())
-p = list(map(int, input().split()))
+n, limit = map(int, input().split()) # n은 사람수, limit는 몸무게 제한
+p = list(map(int, input().split())) # 몸무게 리스트
 p.sort()
 cnt = 0
 while p:
