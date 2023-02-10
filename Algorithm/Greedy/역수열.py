@@ -9,10 +9,13 @@ a = list(map(int, input().split()))
 seq = [0] * n
 for i in range(n): #정렬된 숫자
     for j in range(n):
-        if a[i] == 0 and seq[j] == 0:  # 빈공간 확보 했고 바로 뒷자리에 작은 숫자가 차지
+        if a[i] == 0 and seq[j] == 0:
+        # a[i] == 0 -> 자기 앞에 큰 수가 없다. 빈 공간 확보
+        # seq[j] == 0 -> seq의 j자리가 비어있다.
             seq[j] = i + 1  # for문을 0부터 돌렸기 때문에 +1
             break
         elif seq[j] == 0:
             a[i] -= 1
+            # 빈 공간 확보 위해 a[i] 줄일 동안 seq의 인덱스는 계속 증가
 for x in seq:
     print(x, end=' ')
