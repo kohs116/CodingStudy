@@ -10,13 +10,13 @@ def DFS(L, sum):  # L:a의 인덱스
             print('YES')
             sys.exit(0)  # 프로그램 종료
     else:
-        DFS(L + 1, sum + a[L])
-        DFS(L + 1, sum)
+        DFS(L + 1, sum + a[L]) # D(4,15) -> D(5,22)
+        DFS(L + 1, sum) # D(5,15)
 
 
 if __name__ == "__main__":
     n = int(input())
     a = list(map(int, input().split()))
-    total = sum(a)
+    total = sum(a) # 32
     DFS(0, 0)
     print("NO")

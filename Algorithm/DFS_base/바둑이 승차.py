@@ -14,7 +14,7 @@ def DFS(L, sum, tsum):  # L:인덱스 번호 sum:부분집합의 합
 
 if __name__ == "__main__":
     c, n = map(int, input().split())  # 무게제한, 마리수
-    a = [0] * n
+    a = [0] * n # 무게 리스트
     result = -2147000000
     for i in range(n):
         a[i] = int(input())
